@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffececec"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    tools:context=".Activities.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/login_back"
+        android:layout_centerInParent="true"
+        android:id="@+id/relativeLayout">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textAutoComplete|textEmailAddress"
+        android:ems="10"
+        android:paddingRight="5dp"
+        android:id="@+id/emailid_etext"
+        android:layout_alignParentTop="true"
+        android:textColorHint="#7a7a7a"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/style_etext"
+        android:drawablePadding="10dp"
+        android:hint=" Email"
+        android:drawableLeft="@mipmap/ic_face_black_48px"
+        android:text=""
+        android:paddingLeft="8dp"
+        android:textColor="#009d94"
+        android:drawableTint="#3F51B5"
+        android:paddingBottom="0.5dp"
+        android:layout_margin="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        android:id="@+id/password_etext"
+        android:paddingRight="5dp"
+        android:drawableLeft="@mipmap/ic_lock_black_48px"
+        android:background="@drawable/style_etext"
+        android:hint="Password"
+        android:paddingLeft="8dp"
+        android:textColorHint="#7a7a7a"
+        android:textColor="#009d94"
+        android:drawableTint="#3F51B5"
+        android:paddingTop="1dp"
+        android:layout_below="@+id/emailid_etext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/showPass"
+            android:text="Show Password"
+            android:layout_marginRight="12dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@+id/password_etext"
+            android:layout_alignParentRight="true"
+            android:theme="@style/Base.Theme.AppCompat.Light" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Take me in"
+        android:id="@+id/button_login"
+        android:layout_below="@+id/showPass"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#009d94"
+        android:textSize="16dp"
+        android:textAllCaps="false"
+        android:layout_margin="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:id="@+id/help_login"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="#565656"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="hey hi !"
+        android:id="@+id/textHi"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

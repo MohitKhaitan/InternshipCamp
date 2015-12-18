@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableTint="#39add1"
+            android:drawableLeft="@mipmap/ic_lightbulb_outline_white_48dp"
+            android:textColor="#4d4d4d"
+            android:text="Uh Oh!"
+            android:id="@+id/errorMessConn"
+            android:layout_margin="7dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textDetailsConn"
+            android:paddingLeft="20dp"
+            android:text="Internet connection is not available"
+            android:textSize="18dp"
+            android:textColor="#7a7a7a"
+            android:layout_below="@+id/errorMessConn"/>
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#39add1"
+            android:background="@android:color/transparent"
+            android:layout_below="@+id/textDetailsConn"
+            android:id="@+id/settingsWifi"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Retry"
+            android:id="@+id/retry"
+            android:textColor="#009d94"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/textDetailsConn"
+            android:layout_toLeftOf="@+id/settingsWifi"
+            android:layout_toStartOf="@+id/settingsWifi"
+            android:layout_marginRight="10dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

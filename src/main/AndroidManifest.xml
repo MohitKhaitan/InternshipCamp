@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.internshipcamp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Adapters.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.Login"></activity>
+
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="SXs60eX8vL9WFuwf59MAkk7QXpKp7dk5L0jM4i9B" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="JM7oQDhWPJjtfyxaLjEAPOGfNqymHi1SvkeK64RP" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:cardElevation="6dp"
+        android:id="@+id/cardMain"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                a                <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:civ_border_width="2dp"
+                android:id="@+id/civMain"
+                android:scaleType="centerCrop"
+                app:civ_border_color="#ffececec"
+                android:layout_margin="7dp"
+                android:src="@mipmap/iii" />
+
+                <LinearLayout
+                    android:layout_width="230dp"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/comName"
+                        android:layout_width="230dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="8dp"
+                        android:gravity="left|bottom"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="3dp"
+                        android:text="comName"
+                        android:textColor="#4a4a4a"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="3dp"
+                        android:id="@+id/comSite"
+                        android:text="www.dropbox.com"
+                        android:textColor="#6c6c6c" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="15dp"
+                    android:id="@+id/stipend"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@mipmap/ic_money_off_black_48px" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/reqText"
+                android:layout_below="@+id/l1"
+                android:textColor="#5b5b5b"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="2dp"
+                android:text="Looking for"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:foregroundGravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/MainInRecycler"
+                android:layout_below="@+id/reqText" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ffececec"
+                android:id="@+id/v1"
+                android:layout_below="@+id/MainInRecycler"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/v1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/location"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="14dp"
+                    android:drawableTint="#7a7a7a"
+                    android:drawablePadding="10dp"
+                    android:drawableLeft="@mipmap/ic_place_black_48px"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="#5e5e5e"
+                    android:text="Bhubaneshwar + 2" />
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/period"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="#7a7a7a"
+                    android:textSize="14dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawableLeft="@mipmap/ic_schedule_white_48px"
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:textColor="#5e5e5e"
+                    android:text="30-45 Days" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@android:color/transparent"
+                    android:layout_gravity="end|right|center"
+                    android:id="@+id/addToFav"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/ic_clear_black_48px" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

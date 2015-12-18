@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/g1">
+
+        <item
+            android:id="@+id/home"
+            android:icon="@mipmap/ic_dashboard_white_48dp"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/myInternships"
+            android:icon="@mipmap/ic_lightbulb_outline_white_48dp"
+            android:title="My Interships" />
+
+        <item
+            android:id="@+id/myBookmarks"
+            android:icon="@mipmap/ic_turned_in_black_48px"
+            android:title="My Bookmarks" />
+
+        <item
+            android:id="@+id/event"
+            android:icon="@mipmap/ic_event_seat_white_48dp"
+            android:title="Event Details" />
+
+        <item
+            android:id="@+id/eventDates"
+            android:icon="@mipmap/ic_event_black_48dp"
+            android:title="Important Dates" />
+
+    </group>
+
+    <group android:id="@+id/g2">
+        <item
+            android:id="@+id/logOut"
+            android:icon="@mipmap/ic_exit_to_app_black_48dp"
+            android:title="Log Out" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/sureText"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Are you sure"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#393939" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:id="@+id/sureBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignEnd="@+id/sureText"
+            android:layout_alignRight="@+id/sureText"
+            android:layout_below="@+id/sureText"
+            android:layout_gravity="right"
+            android:background="@android:color/transparent"
+            android:text="Sure"
+            android:textColor="#31abd1"
+            android:layout_marginLeft="7dp" />
+
+        <Button
+            android:id="@+id/cancelBtn"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sureText"
+            android:layout_toLeftOf="@+id/sureBtn"
+            android:layout_toStartOf="@+id/sureBtn"
+            android:background="@android:color/transparent"
+            android:text="Cancel"
+            android:textColor="#31abd1" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
